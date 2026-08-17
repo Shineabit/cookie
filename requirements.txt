@@ -1,0 +1,8 @@
+# Cookie Auto-Login ULTIMATE Pro - version_one
+# Python 3.10+
+# NOTE: tkinter is a system package, not on PyPI — install via apt:
+#       sudo apt install python3-tk   (start.sh attempts this automatically)
+setuptools>=65.0.0   # provides distutils shim required by undetected-chromedriver on Py3.12+
+undetected-chromedriver>=3.5.0
+selenium>=4.15.0
+requests>=2.31.0

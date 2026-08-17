@@ -1,0 +1,37 @@
+{
+  "default": {
+    "login_selectors": [
+      "a[href*='logout']", "a[href*='signout']",
+      "img[alt*='avatar' i]", ".user-menu",
+      ".avatar", "[data-testid='user-avatar']",
+      "[data-testid='account']", ".account-menu"
+    ],
+    "login_url_keywords": ["login", "signin", "sign_in", "auth"],
+    "logged_in_text": ["welcome", "dashboard", "my account", "log out"],
+    "check_url": "/",
+    "check_indicator": "logout",
+    "fail_indicators": [
+      "session expired", "session has expired", "your session",
+      "verify it's you", "verify your identity",
+      "please sign in again", "please log in again",
+      "we've logged you out", "captcha", "are you a robot",
+      "wrong email or password", "invalid login"
+    ]
+  },
+  "github.com": {
+    "login_selectors": ["[data-testid='user-avatar']", ".AppHeader-user", "a[href*='/settings']"],
+    "login_url_keywords": ["login", "session"],
+    "logged_in_text": ["your repositories", "dashboard", "new repository"],
+    "check_url": "/",
+    "check_indicator": "settings",
+    "fail_indicators": ["sign in to github", "incorrect username", "your session has expired"]
+  },
+  "google.com": {
+    "login_selectors": ["a[href*='myaccount']", "[aria-label*='account' i]", ".gb_Ba"],
+    "login_url_keywords": ["signin", "accounts"],
+    "logged_in_text": ["my account", "google account", "sign out"],
+    "check_url": "/",
+    "check_indicator": "account",
+    "fail_indicators": ["couldn't sign you in", "wrong password", "verify it's you"]
+  }
+}
